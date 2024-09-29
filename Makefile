@@ -1,15 +1,21 @@
-.PHONY: all linux busybox clean clean_linux clean_busybox
+.PHONY: all linux busybox clean clean_linux clean_busybox linux_modules
 
 linux_output_dir=output/linux
 busybox_output_dir=output/busybox
+ramdisk_dir=output/ramdisk
 
 all: linux busybox
 
 linux:
 	mkdir -p output/linux
 	cp kernel_config output/linux/.config
-	$(MAKE) -C linux O=$(PWD)/$(linux_output_dir)
+	$(MAKE) -C linux O=$(PWD)/$(linux_output_dir) -j8
 
+
+linux_modules:
+	$(MAKE) -C linux O=$(PWD)/$(linux_output_dir) modules
+	$(MAKE) -C linux O=$(PWD)/$(linux_output_dir) modules_install
+ 
 busybox:
 	mkdir -p output/busybox
 	cp busybox_config output/busybox/.config

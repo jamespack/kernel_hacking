@@ -1,0 +1,1 @@
+savedcmd_/home/james/kernel_hacking/my_kernel_module/main.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/james/kernel_hacking/my_kernel_module/main.ko /home/james/kernel_hacking/my_kernel_module/main.o /home/james/kernel_hacking/my_kernel_module/main.mod.o /home/james/kernel_hacking/my_kernel_module/.module-common.o

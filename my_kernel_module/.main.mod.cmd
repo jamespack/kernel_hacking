@@ -1,0 +1,1 @@
+savedcmd_/home/james/kernel_hacking/my_kernel_module/main.mod := printf '%s\n'   main.o | awk '!x[$$0]++ { print("/home/james/kernel_hacking/my_kernel_module/"$$0) }' > /home/james/kernel_hacking/my_kernel_module/main.mod

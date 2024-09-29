@@ -1,0 +1,1 @@
+savedcmd_/home/james/kernel_hacking/my_kernel_module/Module.symvers :=  scripts/mod/modpost -M        -o /home/james/kernel_hacking/my_kernel_module/Module.symvers -T /home/james/kernel_hacking/my_kernel_module/modules.order -i Module.symvers -e 
