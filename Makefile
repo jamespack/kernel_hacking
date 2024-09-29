@@ -13,8 +13,8 @@ linux:
 
 
 linux_modules:
-	$(MAKE) -C linux O=$(PWD)/$(linux_output_dir) modules
-	$(MAKE) -C linux O=$(PWD)/$(linux_output_dir) modules_install
+	$(export INSTALL_MOD_PATH=$(PWD)/$(ramdisk_dir)) $(MAKE) -C linux O=$(PWD)/$(linux_output_dir) modules
+	$(export INSTALL_MOD_PATH=$(PWD)/$(ramdisk_dir)) $(MAKE) -C linux O=$(PWD)/$(linux_output_dir) modules_install
  
 busybox:
 	mkdir -p output/busybox
