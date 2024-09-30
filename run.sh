@@ -10,4 +10,4 @@ mkdir -p bin sbin etc proc sys usr/bin usr/sbin
 find . -print0 | cpio --null -ov --format=newc | gzip -9 > ../initramfs.cpio.gz
 popd
 
-qemu-system-x86_64 -m 1G -kernel output/linux/arch/x86_64/boot/bzImage -nographic -append 'console=ttyS0 loglevel=15' -enable-kvm -initrd output/initramfs.cpio.gz
+qemu-system-x86_64 -m 1G -kernel output/linux/arch/x86_64/boot/bzImage -nographic -net nic  -net user -cpu host -append 'console=ttyS0 loglevel=15' -enable-kvm -initrd output/initramfs.cpio.gz
