@@ -4,3 +4,7 @@
 
 # Kernel module build support
 ![External Kernel Module Support](image-2.png)
+
+# Networking support
+
+![Basic networking support](image-3.png)

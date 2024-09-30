@@ -1,6 +1,4 @@
 #!/bin/sh
-
+printenv
 ip addr add $ip/$mask dev $interface
 ip route add default via $serverid dev $interface
-echo nameserver $dns > /etc/resolv.conf
-
