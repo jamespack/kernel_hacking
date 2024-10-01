@@ -27,9 +27,11 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
     $(wildcard include/config/ARCH_USE_BUILTIN_BSWAP) \
     $(wildcard include/config/SHADOW_CALL_STACK) \
     $(wildcard include/config/KCOV) \
-  /home/james/kernel_hacking/linux/include/linux/init.h \
-    $(wildcard include/config/MEMORY_HOTPLUG) \
-    $(wildcard include/config/HAVE_ARCH_PREL32_RELOCATIONS) \
+  /home/james/kernel_hacking/linux/include/drm/drm_device.h \
+  /home/james/kernel_hacking/linux/include/linux/list.h \
+    $(wildcard include/config/LIST_HARDENED) \
+    $(wildcard include/config/DEBUG_LIST) \
+  /home/james/kernel_hacking/linux/include/linux/container_of.h \
   /home/james/kernel_hacking/linux/include/linux/build_bug.h \
   /home/james/kernel_hacking/linux/include/linux/compiler.h \
     $(wildcard include/config/TRACE_BRANCH_PROFILING) \
@@ -66,38 +68,6 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
     $(wildcard include/config/KCSAN) \
     $(wildcard include/config/KCSAN_WEAK_MEMORY) \
     $(wildcard include/config/KCSAN_IGNORE_ATOMICS) \
-  /home/james/kernel_hacking/linux/include/linux/stringify.h \
-  /home/james/kernel_hacking/linux/include/linux/module.h \
-    $(wildcard include/config/MODULES) \
-    $(wildcard include/config/SYSFS) \
-    $(wildcard include/config/MODULES_TREE_LOOKUP) \
-    $(wildcard include/config/LIVEPATCH) \
-    $(wildcard include/config/STACKTRACE_BUILD_ID) \
-    $(wildcard include/config/ARCH_USES_CFI_TRAPS) \
-    $(wildcard include/config/MODULE_SIG) \
-    $(wildcard include/config/GENERIC_BUG) \
-    $(wildcard include/config/KALLSYMS) \
-    $(wildcard include/config/SMP) \
-    $(wildcard include/config/TRACEPOINTS) \
-    $(wildcard include/config/TREE_SRCU) \
-    $(wildcard include/config/BPF_EVENTS) \
-    $(wildcard include/config/DEBUG_INFO_BTF_MODULES) \
-    $(wildcard include/config/JUMP_LABEL) \
-    $(wildcard include/config/TRACING) \
-    $(wildcard include/config/EVENT_TRACING) \
-    $(wildcard include/config/FTRACE_MCOUNT_RECORD) \
-    $(wildcard include/config/KPROBES) \
-    $(wildcard include/config/HAVE_STATIC_CALL_INLINE) \
-    $(wildcard include/config/KUNIT) \
-    $(wildcard include/config/PRINTK_INDEX) \
-    $(wildcard include/config/MODULE_UNLOAD) \
-    $(wildcard include/config/CONSTRUCTORS) \
-    $(wildcard include/config/FUNCTION_ERROR_INJECTION) \
-    $(wildcard include/config/DYNAMIC_DEBUG_CORE) \
-  /home/james/kernel_hacking/linux/include/linux/list.h \
-    $(wildcard include/config/LIST_HARDENED) \
-    $(wildcard include/config/DEBUG_LIST) \
-  /home/james/kernel_hacking/linux/include/linux/container_of.h \
   /home/james/kernel_hacking/linux/include/linux/poison.h \
     $(wildcard include/config/ILLEGAL_POINTER_VALUE) \
   /home/james/kernel_hacking/linux/include/linux/const.h \
@@ -105,24 +75,30 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
   /home/james/kernel_hacking/linux/include/uapi/linux/const.h \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/barrier.h \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/alternative.h \
+    $(wildcard include/config/SMP) \
     $(wildcard include/config/CALL_THUNKS) \
+  /home/james/kernel_hacking/linux/include/linux/stringify.h \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/asm.h \
+    $(wildcard include/config/KPROBES) \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/extable_fixup_types.h \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/nops.h \
   /home/james/kernel_hacking/linux/include/asm-generic/barrier.h \
-  /home/james/kernel_hacking/linux/include/linux/stat.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/uapi/asm/stat.h \
-  /home/james/kernel_hacking/linux/include/uapi/linux/stat.h \
-  /home/james/kernel_hacking/linux/include/linux/time.h \
-    $(wildcard include/config/POSIX_TIMERS) \
-  /home/james/kernel_hacking/linux/include/linux/cache.h \
-    $(wildcard include/config/ARCH_HAS_CACHE_LINE_SIZE) \
-  /home/james/kernel_hacking/linux/include/uapi/linux/kernel.h \
-  /home/james/kernel_hacking/linux/include/uapi/linux/sysinfo.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/cache.h \
-    $(wildcard include/config/X86_L1_CACHE_SHIFT) \
-    $(wildcard include/config/X86_INTERNODE_CACHE_SHIFT) \
-    $(wildcard include/config/X86_VSMP) \
+  /home/james/kernel_hacking/linux/include/linux/kref.h \
+  /home/james/kernel_hacking/linux/include/linux/spinlock.h \
+    $(wildcard include/config/DEBUG_SPINLOCK) \
+    $(wildcard include/config/PREEMPTION) \
+    $(wildcard include/config/DEBUG_LOCK_ALLOC) \
+    $(wildcard include/config/PREEMPT_RT) \
+  /home/james/kernel_hacking/linux/include/linux/typecheck.h \
+  /home/james/kernel_hacking/linux/include/linux/preempt.h \
+    $(wildcard include/config/PREEMPT_COUNT) \
+    $(wildcard include/config/DEBUG_PREEMPT) \
+    $(wildcard include/config/TRACE_PREEMPT_TOGGLE) \
+    $(wildcard include/config/PREEMPT_NOTIFIERS) \
+    $(wildcard include/config/PREEMPT_DYNAMIC) \
+    $(wildcard include/config/PREEMPT_NONE) \
+    $(wildcard include/config/PREEMPT_VOLUNTARY) \
+    $(wildcard include/config/PREEMPT) \
   /home/james/kernel_hacking/linux/include/linux/linkage.h \
     $(wildcard include/config/ARCH_USE_SYM_ANNOTATIONS) \
   /home/james/kernel_hacking/linux/include/linux/export.h \
@@ -135,92 +111,68 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
     $(wildcard include/config/UML) \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/ibt.h \
     $(wildcard include/config/X86_KERNEL_IBT) \
-  /home/james/kernel_hacking/linux/include/linux/math64.h \
-    $(wildcard include/config/ARCH_SUPPORTS_INT128) \
-  /home/james/kernel_hacking/linux/include/linux/math.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/div64.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/div64.h \
-  /home/james/kernel_hacking/linux/include/vdso/math64.h \
-  /home/james/kernel_hacking/linux/include/linux/time64.h \
-  /home/james/kernel_hacking/linux/include/vdso/time64.h \
-  /home/james/kernel_hacking/linux/include/uapi/linux/time.h \
-  /home/james/kernel_hacking/linux/include/uapi/linux/time_types.h \
-  /home/james/kernel_hacking/linux/include/linux/time32.h \
-  /home/james/kernel_hacking/linux/include/linux/timex.h \
-  /home/james/kernel_hacking/linux/include/uapi/linux/timex.h \
-  /home/james/kernel_hacking/linux/include/uapi/linux/param.h \
-  arch/x86/include/generated/uapi/asm/param.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/param.h \
-    $(wildcard include/config/HZ) \
-  /home/james/kernel_hacking/linux/include/uapi/asm-generic/param.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/timex.h \
-    $(wildcard include/config/X86_TSC) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/processor.h \
-    $(wildcard include/config/X86_VMX_FEATURE_NAMES) \
-    $(wildcard include/config/X86_IOPL_IOPERM) \
-    $(wildcard include/config/STACKPROTECTOR) \
-    $(wildcard include/config/VM86) \
-    $(wildcard include/config/X86_USER_SHADOW_STACK) \
+  /home/james/kernel_hacking/linux/include/linux/cleanup.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/preempt.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/rmwcc.h \
+  /home/james/kernel_hacking/linux/include/linux/args.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/percpu.h \
+    $(wildcard include/config/X86_64_SMP) \
+    $(wildcard include/config/CC_HAS_NAMED_AS) \
     $(wildcard include/config/USE_X86_SEG_SUPPORT) \
+  /home/james/kernel_hacking/linux/include/asm-generic/percpu.h \
+    $(wildcard include/config/HAVE_SETUP_PER_CPU_AREA) \
+  /home/james/kernel_hacking/linux/include/linux/threads.h \
+    $(wildcard include/config/NR_CPUS) \
+    $(wildcard include/config/BASE_SMALL) \
+  /home/james/kernel_hacking/linux/include/linux/percpu-defs.h \
+    $(wildcard include/config/DEBUG_FORCE_WEAK_PER_CPU) \
+    $(wildcard include/config/AMD_MEM_ENCRYPT) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/current.h \
+    $(wildcard include/config/MITIGATION_CALL_DEPTH_TRACKING) \
+  /home/james/kernel_hacking/linux/include/linux/cache.h \
+    $(wildcard include/config/ARCH_HAS_CACHE_LINE_SIZE) \
+  /home/james/kernel_hacking/linux/include/uapi/linux/kernel.h \
+  /home/james/kernel_hacking/linux/include/uapi/linux/sysinfo.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/cache.h \
+    $(wildcard include/config/X86_L1_CACHE_SHIFT) \
+    $(wildcard include/config/X86_INTERNODE_CACHE_SHIFT) \
+    $(wildcard include/config/X86_VSMP) \
+  /home/james/kernel_hacking/linux/include/linux/static_call_types.h \
+    $(wildcard include/config/HAVE_STATIC_CALL) \
+    $(wildcard include/config/HAVE_STATIC_CALL_INLINE) \
+  /home/james/kernel_hacking/linux/include/linux/irqflags.h \
+    $(wildcard include/config/PROVE_LOCKING) \
+    $(wildcard include/config/TRACE_IRQFLAGS) \
+    $(wildcard include/config/IRQSOFF_TRACER) \
+    $(wildcard include/config/PREEMPT_TRACER) \
+    $(wildcard include/config/DEBUG_IRQFLAGS) \
+    $(wildcard include/config/TRACE_IRQFLAGS_SUPPORT) \
+  /home/james/kernel_hacking/linux/include/linux/irqflags_types.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/irqflags.h \
     $(wildcard include/config/PARAVIRT_XXL) \
-    $(wildcard include/config/CPU_SUP_AMD) \
-    $(wildcard include/config/XEN) \
+    $(wildcard include/config/DEBUG_ENTRY) \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/processor-flags.h \
+    $(wildcard include/config/VM86) \
     $(wildcard include/config/MITIGATION_PAGE_TABLE_ISOLATION) \
   /home/james/kernel_hacking/linux/arch/x86/include/uapi/asm/processor-flags.h \
   /home/james/kernel_hacking/linux/include/linux/mem_encrypt.h \
     $(wildcard include/config/ARCH_HAS_MEM_ENCRYPT) \
-    $(wildcard include/config/AMD_MEM_ENCRYPT) \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/mem_encrypt.h \
     $(wildcard include/config/X86_MEM_ENCRYPT) \
+  /home/james/kernel_hacking/linux/include/linux/init.h \
+    $(wildcard include/config/MEMORY_HOTPLUG) \
+    $(wildcard include/config/HAVE_ARCH_PREL32_RELOCATIONS) \
   /home/james/kernel_hacking/linux/include/linux/cc_platform.h \
     $(wildcard include/config/ARCH_HAS_CC_PLATFORM) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/math_emu.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/ptrace.h \
-    $(wildcard include/config/PARAVIRT) \
-    $(wildcard include/config/IA32_EMULATION) \
-    $(wildcard include/config/X86_DEBUGCTLMSR) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/segment.h \
-    $(wildcard include/config/XEN_PV) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/page_types.h \
-    $(wildcard include/config/PAGE_SHIFT) \
-    $(wildcard include/config/PHYSICAL_START) \
-    $(wildcard include/config/PHYSICAL_ALIGN) \
-    $(wildcard include/config/DYNAMIC_PHYSICAL_MASK) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/page_64_types.h \
-    $(wildcard include/config/KASAN) \
-    $(wildcard include/config/DYNAMIC_MEMORY_LAYOUT) \
-    $(wildcard include/config/X86_5LEVEL) \
-    $(wildcard include/config/RANDOMIZE_BASE) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/kaslr.h \
-    $(wildcard include/config/RANDOMIZE_MEMORY) \
-  /home/james/kernel_hacking/linux/arch/x86/include/uapi/asm/ptrace.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/uapi/asm/ptrace-abi.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/paravirt_types.h \
-    $(wildcard include/config/PGTABLE_LEVELS) \
-    $(wildcard include/config/ZERO_CALL_USED_REGS) \
-    $(wildcard include/config/PARAVIRT_DEBUG) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/desc_defs.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/pgtable_types.h \
-    $(wildcard include/config/X86_INTEL_MEMORY_PROTECTION_KEYS) \
-    $(wildcard include/config/X86_PAE) \
-    $(wildcard include/config/MEM_SOFT_DIRTY) \
-    $(wildcard include/config/HAVE_ARCH_USERFAULTFD_WP) \
-    $(wildcard include/config/PROC_FS) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/pgtable_64_types.h \
-    $(wildcard include/config/KMSAN) \
-    $(wildcard include/config/DEBUG_KMAP_LOCAL_FORCE_MAP) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/sparsemem.h \
-    $(wildcard include/config/SPARSEMEM) \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/nospec-branch.h \
     $(wildcard include/config/CALL_THUNKS_DEBUG) \
-    $(wildcard include/config/MITIGATION_CALL_DEPTH_TRACKING) \
     $(wildcard include/config/NOINSTR_VALIDATION) \
     $(wildcard include/config/MITIGATION_UNRET_ENTRY) \
     $(wildcard include/config/MITIGATION_SRSO) \
     $(wildcard include/config/MITIGATION_IBPB_ENTRY) \
   /home/james/kernel_hacking/linux/include/linux/static_key.h \
   /home/james/kernel_hacking/linux/include/linux/jump_label.h \
+    $(wildcard include/config/JUMP_LABEL) \
     $(wildcard include/config/HAVE_ARCH_JUMP_LABEL_RELATIVE) \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/jump_label.h \
     $(wildcard include/config/HAVE_JUMP_LABEL_HACK) \
@@ -231,16 +183,21 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/required-features.h \
     $(wildcard include/config/X86_MINIMUM_CPU_FAMILY) \
     $(wildcard include/config/MATH_EMULATION) \
+    $(wildcard include/config/X86_PAE) \
     $(wildcard include/config/X86_CMPXCHG64) \
     $(wildcard include/config/X86_CMOV) \
     $(wildcard include/config/X86_P6_NOP) \
     $(wildcard include/config/MATOM) \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/disabled-features.h \
     $(wildcard include/config/X86_UMIP) \
+    $(wildcard include/config/X86_INTEL_MEMORY_PROTECTION_KEYS) \
+    $(wildcard include/config/X86_5LEVEL) \
     $(wildcard include/config/ADDRESS_MASKING) \
     $(wildcard include/config/INTEL_IOMMU_SVM) \
     $(wildcard include/config/X86_SGX) \
+    $(wildcard include/config/XEN_PV) \
     $(wildcard include/config/INTEL_TDX_GUEST) \
+    $(wildcard include/config/X86_USER_SHADOW_STACK) \
     $(wildcard include/config/X86_FRED) \
     $(wildcard include/config/KVM_AMD_SEV) \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/msr-index.h \
@@ -256,112 +213,29 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
   /home/james/kernel_hacking/linux/include/uapi/linux/swab.h \
   /home/james/kernel_hacking/linux/arch/x86/include/uapi/asm/swab.h \
   /home/james/kernel_hacking/linux/include/linux/byteorder/generic.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/percpu.h \
-    $(wildcard include/config/X86_64_SMP) \
-    $(wildcard include/config/CC_HAS_NAMED_AS) \
-  /home/james/kernel_hacking/linux/include/asm-generic/percpu.h \
-    $(wildcard include/config/DEBUG_PREEMPT) \
-    $(wildcard include/config/HAVE_SETUP_PER_CPU_AREA) \
-  /home/james/kernel_hacking/linux/include/linux/threads.h \
-    $(wildcard include/config/NR_CPUS) \
-    $(wildcard include/config/BASE_SMALL) \
-  /home/james/kernel_hacking/linux/include/linux/percpu-defs.h \
-    $(wildcard include/config/DEBUG_FORCE_WEAK_PER_CPU) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/current.h \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/asm-offsets.h \
   include/generated/asm-offsets.h \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/GEN-for-each-reg.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/spinlock_types.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/qspinlock_types.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/qrwlock_types.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/proto.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/uapi/asm/ldt.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/uapi/asm/sigcontext.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/cpuid.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/string.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/string_64.h \
-    $(wildcard include/config/ARCH_HAS_UACCESS_FLUSHCACHE) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/page.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/page_64.h \
-    $(wildcard include/config/DEBUG_VIRTUAL) \
-    $(wildcard include/config/X86_VSYSCALL_EMULATION) \
-  /home/james/kernel_hacking/linux/include/linux/kmsan-checks.h \
-  /home/james/kernel_hacking/linux/include/linux/range.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/memory_model.h \
-    $(wildcard include/config/FLATMEM) \
-    $(wildcard include/config/SPARSEMEM_VMEMMAP) \
-  /home/james/kernel_hacking/linux/include/linux/pfn.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/getorder.h \
-  /home/james/kernel_hacking/linux/include/linux/log2.h \
-    $(wildcard include/config/ARCH_HAS_ILOG2_U32) \
-    $(wildcard include/config/ARCH_HAS_ILOG2_U64) \
-  /home/james/kernel_hacking/linux/include/linux/bitops.h \
-  /home/james/kernel_hacking/linux/include/linux/typecheck.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/bitops/generic-non-atomic.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/bitops.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/rmwcc.h \
-  /home/james/kernel_hacking/linux/include/linux/args.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/bitops/sched.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/arch_hweight.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/bitops/const_hweight.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/bitops/instrumented-atomic.h \
-  /home/james/kernel_hacking/linux/include/linux/instrumented.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/bitops/instrumented-non-atomic.h \
-    $(wildcard include/config/KCSAN_ASSUME_PLAIN_WRITES_ATOMIC) \
-  /home/james/kernel_hacking/linux/include/asm-generic/bitops/instrumented-lock.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/bitops/le.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/bitops/ext2-atomic-setbit.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/special_insns.h \
-  /home/james/kernel_hacking/linux/include/linux/errno.h \
-  /home/james/kernel_hacking/linux/include/uapi/linux/errno.h \
-  arch/x86/include/generated/uapi/asm/errno.h \
-  /home/james/kernel_hacking/linux/include/uapi/asm-generic/errno.h \
-  /home/james/kernel_hacking/linux/include/uapi/asm-generic/errno-base.h \
-  /home/james/kernel_hacking/linux/include/linux/irqflags.h \
-    $(wildcard include/config/PROVE_LOCKING) \
-    $(wildcard include/config/TRACE_IRQFLAGS) \
-    $(wildcard include/config/PREEMPT_RT) \
-    $(wildcard include/config/IRQSOFF_TRACER) \
-    $(wildcard include/config/PREEMPT_TRACER) \
-    $(wildcard include/config/DEBUG_IRQFLAGS) \
-    $(wildcard include/config/TRACE_IRQFLAGS_SUPPORT) \
-  /home/james/kernel_hacking/linux/include/linux/irqflags_types.h \
-  /home/james/kernel_hacking/linux/include/linux/cleanup.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/irqflags.h \
-    $(wildcard include/config/DEBUG_ENTRY) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/fpu/types.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/vmxfeatures.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/vdso/processor.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/shstk.h \
-  /home/james/kernel_hacking/linux/include/linux/personality.h \
-  /home/james/kernel_hacking/linux/include/uapi/linux/personality.h \
-  /home/james/kernel_hacking/linux/include/linux/err.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/tsc.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/cpufeature.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/msr.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/cpumask.h \
-  /home/james/kernel_hacking/linux/include/linux/cpumask.h \
-    $(wildcard include/config/FORCE_NR_CPUS) \
-    $(wildcard include/config/HOTPLUG_CPU) \
-    $(wildcard include/config/DEBUG_PER_CPU_MAPS) \
-    $(wildcard include/config/CPUMASK_OFFSTACK) \
-  /home/james/kernel_hacking/linux/include/linux/kernel.h \
-    $(wildcard include/config/PREEMPT_VOLUNTARY_BUILD) \
-    $(wildcard include/config/PREEMPT_DYNAMIC) \
-    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_CALL) \
-    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_KEY) \
-    $(wildcard include/config/PREEMPT_) \
-    $(wildcard include/config/DEBUG_ATOMIC_SLEEP) \
-    $(wildcard include/config/MMU) \
-  /home/james/kernel_hacking/linux/include/linux/stdarg.h \
-  /home/james/kernel_hacking/linux/include/linux/align.h \
-  /home/james/kernel_hacking/linux/include/linux/array_size.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/segment.h \
+  /home/james/kernel_hacking/linux/include/linux/thread_info.h \
+    $(wildcard include/config/THREAD_INFO_IN_TASK) \
+    $(wildcard include/config/GENERIC_ENTRY) \
+    $(wildcard include/config/HAVE_ARCH_WITHIN_STACK_FRAMES) \
+    $(wildcard include/config/HARDENED_USERCOPY) \
+    $(wildcard include/config/BUG) \
+    $(wildcard include/config/SH) \
   /home/james/kernel_hacking/linux/include/linux/limits.h \
   /home/james/kernel_hacking/linux/include/uapi/linux/limits.h \
   /home/james/kernel_hacking/linux/include/vdso/limits.h \
-  /home/james/kernel_hacking/linux/include/linux/hex.h \
-  /home/james/kernel_hacking/linux/include/linux/kstrtox.h \
-  /home/james/kernel_hacking/linux/include/linux/minmax.h \
+  /home/james/kernel_hacking/linux/include/linux/bug.h \
+    $(wildcard include/config/GENERIC_BUG) \
+    $(wildcard include/config/BUG_ON_DATA_CORRUPTION) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/bug.h \
+    $(wildcard include/config/DEBUG_BUGVERBOSE) \
+  /home/james/kernel_hacking/linux/include/linux/instrumentation.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/bug.h \
+    $(wildcard include/config/GENERIC_BUG_RELATIVE_POINTERS) \
+  /home/james/kernel_hacking/linux/include/linux/once_lite.h \
   /home/james/kernel_hacking/linux/include/linux/panic.h \
     $(wildcard include/config/PANIC_TIMEOUT) \
   /home/james/kernel_hacking/linux/include/linux/printk.h \
@@ -370,21 +244,156 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
     $(wildcard include/config/CONSOLE_LOGLEVEL_QUIET) \
     $(wildcard include/config/EARLY_PRINTK) \
     $(wildcard include/config/PRINTK) \
+    $(wildcard include/config/PRINTK_INDEX) \
     $(wildcard include/config/DYNAMIC_DEBUG) \
+    $(wildcard include/config/DYNAMIC_DEBUG_CORE) \
+  /home/james/kernel_hacking/linux/include/linux/stdarg.h \
   /home/james/kernel_hacking/linux/include/linux/kern_levels.h \
   /home/james/kernel_hacking/linux/include/linux/ratelimit_types.h \
+  /home/james/kernel_hacking/linux/include/uapi/linux/param.h \
+  arch/x86/include/generated/uapi/asm/param.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/param.h \
+    $(wildcard include/config/HZ) \
+  /home/james/kernel_hacking/linux/include/uapi/asm-generic/param.h \
   /home/james/kernel_hacking/linux/include/linux/spinlock_types_raw.h \
-    $(wildcard include/config/DEBUG_SPINLOCK) \
-    $(wildcard include/config/DEBUG_LOCK_ALLOC) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/spinlock_types.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/qspinlock_types.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/qrwlock_types.h \
   /home/james/kernel_hacking/linux/include/linux/lockdep_types.h \
     $(wildcard include/config/PROVE_RAW_LOCK_NESTING) \
     $(wildcard include/config/LOCKDEP) \
     $(wildcard include/config/LOCK_STAT) \
-  /home/james/kernel_hacking/linux/include/linux/once_lite.h \
-  /home/james/kernel_hacking/linux/include/linux/sprintf.h \
-  /home/james/kernel_hacking/linux/include/linux/static_call_types.h \
-    $(wildcard include/config/HAVE_STATIC_CALL) \
+  /home/james/kernel_hacking/linux/include/linux/restart_block.h \
+  /home/james/kernel_hacking/linux/include/linux/errno.h \
+  /home/james/kernel_hacking/linux/include/uapi/linux/errno.h \
+  arch/x86/include/generated/uapi/asm/errno.h \
+  /home/james/kernel_hacking/linux/include/uapi/asm-generic/errno.h \
+  /home/james/kernel_hacking/linux/include/uapi/asm-generic/errno-base.h \
+  /home/james/kernel_hacking/linux/include/linux/bitops.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/bitops/generic-non-atomic.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/bitops.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/bitops/sched.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/arch_hweight.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/bitops/const_hweight.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/bitops/instrumented-atomic.h \
+  /home/james/kernel_hacking/linux/include/linux/instrumented.h \
+  /home/james/kernel_hacking/linux/include/linux/kmsan-checks.h \
+    $(wildcard include/config/KMSAN) \
+  /home/james/kernel_hacking/linux/include/asm-generic/bitops/instrumented-non-atomic.h \
+    $(wildcard include/config/KCSAN_ASSUME_PLAIN_WRITES_ATOMIC) \
+  /home/james/kernel_hacking/linux/include/asm-generic/bitops/instrumented-lock.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/bitops/le.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/bitops/ext2-atomic-setbit.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/thread_info.h \
+    $(wildcard include/config/X86_IOPL_IOPERM) \
+    $(wildcard include/config/COMPAT) \
+    $(wildcard include/config/IA32_EMULATION) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/page.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/page_types.h \
+    $(wildcard include/config/PAGE_SHIFT) \
+    $(wildcard include/config/PHYSICAL_START) \
+    $(wildcard include/config/PHYSICAL_ALIGN) \
+    $(wildcard include/config/DYNAMIC_PHYSICAL_MASK) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/page_64_types.h \
+    $(wildcard include/config/KASAN) \
+    $(wildcard include/config/DYNAMIC_MEMORY_LAYOUT) \
+    $(wildcard include/config/RANDOMIZE_BASE) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/kaslr.h \
+    $(wildcard include/config/RANDOMIZE_MEMORY) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/page_64.h \
+    $(wildcard include/config/DEBUG_VIRTUAL) \
+    $(wildcard include/config/X86_VSYSCALL_EMULATION) \
+  /home/james/kernel_hacking/linux/include/linux/range.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/memory_model.h \
+    $(wildcard include/config/FLATMEM) \
+    $(wildcard include/config/SPARSEMEM_VMEMMAP) \
+    $(wildcard include/config/SPARSEMEM) \
+  /home/james/kernel_hacking/linux/include/linux/pfn.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/getorder.h \
+  /home/james/kernel_hacking/linux/include/linux/log2.h \
+    $(wildcard include/config/ARCH_HAS_ILOG2_U32) \
+    $(wildcard include/config/ARCH_HAS_ILOG2_U64) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/cpufeature.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/processor.h \
+    $(wildcard include/config/X86_VMX_FEATURE_NAMES) \
+    $(wildcard include/config/STACKPROTECTOR) \
+    $(wildcard include/config/CPU_SUP_AMD) \
+    $(wildcard include/config/XEN) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/math_emu.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/ptrace.h \
+    $(wildcard include/config/PARAVIRT) \
+    $(wildcard include/config/X86_DEBUGCTLMSR) \
+  /home/james/kernel_hacking/linux/arch/x86/include/uapi/asm/ptrace.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/uapi/asm/ptrace-abi.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/paravirt_types.h \
+    $(wildcard include/config/PGTABLE_LEVELS) \
+    $(wildcard include/config/ZERO_CALL_USED_REGS) \
+    $(wildcard include/config/PARAVIRT_DEBUG) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/desc_defs.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/pgtable_types.h \
+    $(wildcard include/config/MEM_SOFT_DIRTY) \
+    $(wildcard include/config/HAVE_ARCH_USERFAULTFD_WP) \
+    $(wildcard include/config/PROC_FS) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/pgtable_64_types.h \
+    $(wildcard include/config/DEBUG_KMAP_LOCAL_FORCE_MAP) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/sparsemem.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/proto.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/uapi/asm/ldt.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/uapi/asm/sigcontext.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/cpuid.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/string.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/string_64.h \
+    $(wildcard include/config/ARCH_HAS_UACCESS_FLUSHCACHE) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/special_insns.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/fpu/types.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/vmxfeatures.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/vdso/processor.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/shstk.h \
+  /home/james/kernel_hacking/linux/include/linux/personality.h \
+  /home/james/kernel_hacking/linux/include/uapi/linux/personality.h \
+  /home/james/kernel_hacking/linux/include/linux/math64.h \
+    $(wildcard include/config/ARCH_SUPPORTS_INT128) \
+  /home/james/kernel_hacking/linux/include/linux/math.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/div64.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/div64.h \
+  /home/james/kernel_hacking/linux/include/vdso/math64.h \
+  /home/james/kernel_hacking/linux/include/linux/err.h \
+  /home/james/kernel_hacking/linux/include/linux/atomic.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/atomic.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/cmpxchg.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/cmpxchg_64.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/atomic64_64.h \
+  /home/james/kernel_hacking/linux/include/linux/atomic/atomic-arch-fallback.h \
+    $(wildcard include/config/GENERIC_ATOMIC64) \
+  /home/james/kernel_hacking/linux/include/linux/atomic/atomic-long.h \
+  /home/james/kernel_hacking/linux/include/linux/atomic/atomic-instrumented.h \
+  /home/james/kernel_hacking/linux/include/linux/bottom_half.h \
   /home/james/kernel_hacking/linux/include/linux/instruction_pointer.h \
+  /home/james/kernel_hacking/linux/include/linux/lockdep.h \
+    $(wildcard include/config/DEBUG_LOCKING_API_SELFTESTS) \
+  /home/james/kernel_hacking/linux/include/linux/smp.h \
+    $(wildcard include/config/UP_LATE_INIT) \
+    $(wildcard include/config/CSD_LOCK_WAIT_DEBUG) \
+  /home/james/kernel_hacking/linux/include/linux/cpumask.h \
+    $(wildcard include/config/FORCE_NR_CPUS) \
+    $(wildcard include/config/HOTPLUG_CPU) \
+    $(wildcard include/config/DEBUG_PER_CPU_MAPS) \
+    $(wildcard include/config/CPUMASK_OFFSTACK) \
+  /home/james/kernel_hacking/linux/include/linux/kernel.h \
+    $(wildcard include/config/PREEMPT_VOLUNTARY_BUILD) \
+    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_CALL) \
+    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_KEY) \
+    $(wildcard include/config/PREEMPT_) \
+    $(wildcard include/config/DEBUG_ATOMIC_SLEEP) \
+    $(wildcard include/config/MMU) \
+    $(wildcard include/config/TRACING) \
+    $(wildcard include/config/FTRACE_MCOUNT_RECORD) \
+  /home/james/kernel_hacking/linux/include/linux/align.h \
+  /home/james/kernel_hacking/linux/include/linux/array_size.h \
+  /home/james/kernel_hacking/linux/include/linux/hex.h \
+  /home/james/kernel_hacking/linux/include/linux/kstrtox.h \
+  /home/james/kernel_hacking/linux/include/linux/minmax.h \
+  /home/james/kernel_hacking/linux/include/linux/sprintf.h \
   /home/james/kernel_hacking/linux/include/linux/wordpart.h \
   /home/james/kernel_hacking/linux/include/linux/bitmap.h \
   /home/james/kernel_hacking/linux/include/linux/find.h \
@@ -395,23 +404,6 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
   /home/james/kernel_hacking/linux/include/uapi/linux/string.h \
   /home/james/kernel_hacking/linux/include/linux/bitmap-str.h \
   /home/james/kernel_hacking/linux/include/linux/cpumask_types.h \
-  /home/james/kernel_hacking/linux/include/linux/atomic.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/atomic.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/cmpxchg.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/cmpxchg_64.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/atomic64_64.h \
-  /home/james/kernel_hacking/linux/include/linux/atomic/atomic-arch-fallback.h \
-    $(wildcard include/config/GENERIC_ATOMIC64) \
-  /home/james/kernel_hacking/linux/include/linux/atomic/atomic-long.h \
-  /home/james/kernel_hacking/linux/include/linux/atomic/atomic-instrumented.h \
-  /home/james/kernel_hacking/linux/include/linux/bug.h \
-    $(wildcard include/config/BUG_ON_DATA_CORRUPTION) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/bug.h \
-    $(wildcard include/config/DEBUG_BUGVERBOSE) \
-  /home/james/kernel_hacking/linux/include/linux/instrumentation.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/bug.h \
-    $(wildcard include/config/BUG) \
-    $(wildcard include/config/GENERIC_BUG_RELATIVE_POINTERS) \
   /home/james/kernel_hacking/linux/include/linux/gfp_types.h \
     $(wildcard include/config/KASAN_HW_TAGS) \
     $(wildcard include/config/SLAB_OBJ_EXT) \
@@ -420,13 +412,69 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
     $(wildcard include/config/NUMA_KEEP_MEMINFO) \
     $(wildcard include/config/NUMA) \
     $(wildcard include/config/HAVE_ARCH_NODE_DEV_GROUP) \
-  /home/james/kernel_hacking/linux/arch/x86/include/uapi/asm/msr.h \
-  /home/james/kernel_hacking/linux/include/uapi/linux/ioctl.h \
-  arch/x86/include/generated/uapi/asm/ioctl.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/ioctl.h \
-  /home/james/kernel_hacking/linux/include/uapi/asm-generic/ioctl.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/shared/msr.h \
+  /home/james/kernel_hacking/linux/include/linux/smp_types.h \
+  /home/james/kernel_hacking/linux/include/linux/llist.h \
+    $(wildcard include/config/ARCH_HAVE_NMI_SAFE_CMPXCHG) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/smp.h \
+    $(wildcard include/config/DEBUG_NMI_SELFTEST) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/cpumask.h \
+  arch/x86/include/generated/asm/mmiowb.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/mmiowb.h \
+    $(wildcard include/config/MMIOWB) \
+  /home/james/kernel_hacking/linux/include/linux/spinlock_types.h \
+  /home/james/kernel_hacking/linux/include/linux/rwlock_types.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/spinlock.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/paravirt.h \
+    $(wildcard include/config/PARAVIRT_SPINLOCKS) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/frame.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/qspinlock.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/qspinlock.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/qrwlock.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/qrwlock.h \
+  /home/james/kernel_hacking/linux/include/linux/rwlock.h \
+  /home/james/kernel_hacking/linux/include/linux/spinlock_api_smp.h \
+    $(wildcard include/config/INLINE_SPIN_LOCK) \
+    $(wildcard include/config/INLINE_SPIN_LOCK_BH) \
+    $(wildcard include/config/INLINE_SPIN_LOCK_IRQ) \
+    $(wildcard include/config/INLINE_SPIN_LOCK_IRQSAVE) \
+    $(wildcard include/config/INLINE_SPIN_TRYLOCK) \
+    $(wildcard include/config/INLINE_SPIN_TRYLOCK_BH) \
+    $(wildcard include/config/UNINLINE_SPIN_UNLOCK) \
+    $(wildcard include/config/INLINE_SPIN_UNLOCK_BH) \
+    $(wildcard include/config/INLINE_SPIN_UNLOCK_IRQ) \
+    $(wildcard include/config/INLINE_SPIN_UNLOCK_IRQRESTORE) \
+    $(wildcard include/config/GENERIC_LOCKBREAK) \
+  /home/james/kernel_hacking/linux/include/linux/rwlock_api_smp.h \
+    $(wildcard include/config/INLINE_READ_LOCK) \
+    $(wildcard include/config/INLINE_WRITE_LOCK) \
+    $(wildcard include/config/INLINE_READ_LOCK_BH) \
+    $(wildcard include/config/INLINE_WRITE_LOCK_BH) \
+    $(wildcard include/config/INLINE_READ_LOCK_IRQ) \
+    $(wildcard include/config/INLINE_WRITE_LOCK_IRQ) \
+    $(wildcard include/config/INLINE_READ_LOCK_IRQSAVE) \
+    $(wildcard include/config/INLINE_WRITE_LOCK_IRQSAVE) \
+    $(wildcard include/config/INLINE_READ_TRYLOCK) \
+    $(wildcard include/config/INLINE_WRITE_TRYLOCK) \
+    $(wildcard include/config/INLINE_READ_UNLOCK) \
+    $(wildcard include/config/INLINE_WRITE_UNLOCK) \
+    $(wildcard include/config/INLINE_READ_UNLOCK_BH) \
+    $(wildcard include/config/INLINE_WRITE_UNLOCK_BH) \
+    $(wildcard include/config/INLINE_READ_UNLOCK_IRQ) \
+    $(wildcard include/config/INLINE_WRITE_UNLOCK_IRQ) \
+    $(wildcard include/config/INLINE_READ_UNLOCK_IRQRESTORE) \
+    $(wildcard include/config/INLINE_WRITE_UNLOCK_IRQRESTORE) \
+  /home/james/kernel_hacking/linux/include/linux/refcount.h \
+  /home/james/kernel_hacking/linux/include/linux/refcount_types.h \
+  /home/james/kernel_hacking/linux/include/linux/mutex.h \
+    $(wildcard include/config/DEBUG_MUTEXES) \
+  /home/james/kernel_hacking/linux/include/linux/osq_lock.h \
+  /home/james/kernel_hacking/linux/include/linux/debug_locks.h \
+  /home/james/kernel_hacking/linux/include/linux/mutex_types.h \
+    $(wildcard include/config/MUTEX_SPIN_ON_OWNER) \
+  /home/james/kernel_hacking/linux/include/linux/idr.h \
+  /home/james/kernel_hacking/linux/include/linux/radix-tree.h \
   /home/james/kernel_hacking/linux/include/linux/percpu.h \
+    $(wildcard include/config/MODULES) \
     $(wildcard include/config/MEM_ALLOC_PROFILING) \
     $(wildcard include/config/RANDOM_KMALLOC_CACHES) \
     $(wildcard include/config/NEED_PER_CPU_PAGE_FIRST_CHUNK) \
@@ -435,32 +483,6 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
     $(wildcard include/config/MEM_ALLOC_PROFILING_ENABLED_BY_DEFAULT) \
   /home/james/kernel_hacking/linux/include/linux/codetag.h \
     $(wildcard include/config/CODE_TAGGING) \
-  /home/james/kernel_hacking/linux/include/linux/preempt.h \
-    $(wildcard include/config/PREEMPT_COUNT) \
-    $(wildcard include/config/TRACE_PREEMPT_TOGGLE) \
-    $(wildcard include/config/PREEMPTION) \
-    $(wildcard include/config/PREEMPT_NOTIFIERS) \
-    $(wildcard include/config/PREEMPT_NONE) \
-    $(wildcard include/config/PREEMPT_VOLUNTARY) \
-    $(wildcard include/config/PREEMPT) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/preempt.h \
-  /home/james/kernel_hacking/linux/include/linux/smp.h \
-    $(wildcard include/config/UP_LATE_INIT) \
-    $(wildcard include/config/CSD_LOCK_WAIT_DEBUG) \
-  /home/james/kernel_hacking/linux/include/linux/smp_types.h \
-  /home/james/kernel_hacking/linux/include/linux/llist.h \
-    $(wildcard include/config/ARCH_HAVE_NMI_SAFE_CMPXCHG) \
-  /home/james/kernel_hacking/linux/include/linux/thread_info.h \
-    $(wildcard include/config/THREAD_INFO_IN_TASK) \
-    $(wildcard include/config/GENERIC_ENTRY) \
-    $(wildcard include/config/HAVE_ARCH_WITHIN_STACK_FRAMES) \
-    $(wildcard include/config/HARDENED_USERCOPY) \
-    $(wildcard include/config/SH) \
-  /home/james/kernel_hacking/linux/include/linux/restart_block.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/thread_info.h \
-    $(wildcard include/config/COMPAT) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/smp.h \
-    $(wildcard include/config/DEBUG_NMI_SELFTEST) \
   /home/james/kernel_hacking/linux/include/linux/mmdebug.h \
     $(wildcard include/config/DEBUG_VM) \
     $(wildcard include/config/DEBUG_VM_IRQSOFF) \
@@ -504,7 +526,6 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
     $(wildcard include/config/IO_URING) \
     $(wildcard include/config/AUDIT) \
     $(wildcard include/config/AUDITSYSCALL) \
-    $(wildcard include/config/DEBUG_MUTEXES) \
     $(wildcard include/config/UBSAN) \
     $(wildcard include/config/UBSAN_TRAP) \
     $(wildcard include/config/COMPACTION) \
@@ -518,11 +539,13 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
     $(wildcard include/config/SCHED_MM_CID) \
     $(wildcard include/config/FAULT_INJECTION) \
     $(wildcard include/config/LATENCYTOP) \
+    $(wildcard include/config/KUNIT) \
     $(wildcard include/config/FUNCTION_GRAPH_TRACER) \
     $(wildcard include/config/MEMCG) \
     $(wildcard include/config/UPROBES) \
     $(wildcard include/config/BCACHE) \
     $(wildcard include/config/VMAP_STACK) \
+    $(wildcard include/config/LIVEPATCH) \
     $(wildcard include/config/SECURITY) \
     $(wildcard include/config/BPF_SYSCALL) \
     $(wildcard include/config/GCC_PLUGIN_STACKLEAK) \
@@ -538,11 +561,6 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
   /home/james/kernel_hacking/linux/include/linux/shm.h \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/shmparam.h \
   /home/james/kernel_hacking/linux/include/linux/kmsan_types.h \
-  /home/james/kernel_hacking/linux/include/linux/mutex_types.h \
-    $(wildcard include/config/MUTEX_SPIN_ON_OWNER) \
-  /home/james/kernel_hacking/linux/include/linux/osq_lock.h \
-  /home/james/kernel_hacking/linux/include/linux/spinlock_types.h \
-  /home/james/kernel_hacking/linux/include/linux/rwlock_types.h \
   /home/james/kernel_hacking/linux/include/linux/plist_types.h \
   /home/james/kernel_hacking/linux/include/linux/hrtimer_types.h \
   /home/james/kernel_hacking/linux/include/linux/timerqueue_types.h \
@@ -551,9 +569,9 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
   /home/james/kernel_hacking/linux/include/linux/seccomp_types.h \
     $(wildcard include/config/SECCOMP) \
   /home/james/kernel_hacking/linux/include/linux/nodemask_types.h \
-  /home/james/kernel_hacking/linux/include/linux/refcount_types.h \
   /home/james/kernel_hacking/linux/include/linux/resource.h \
   /home/james/kernel_hacking/linux/include/uapi/linux/resource.h \
+  /home/james/kernel_hacking/linux/include/uapi/linux/time_types.h \
   arch/x86/include/generated/uapi/asm/resource.h \
   /home/james/kernel_hacking/linux/include/asm-generic/resource.h \
   /home/james/kernel_hacking/linux/include/uapi/asm-generic/resource.h \
@@ -577,6 +595,7 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
   /home/james/kernel_hacking/linux/include/linux/task_io_accounting.h \
     $(wildcard include/config/TASK_IO_ACCOUNTING) \
   /home/james/kernel_hacking/linux/include/linux/posix-timers_types.h \
+    $(wildcard include/config/POSIX_TIMERS) \
   /home/james/kernel_hacking/linux/include/uapi/linux/rseq.h \
   /home/james/kernel_hacking/linux/include/linux/seqlock_types.h \
   /home/james/kernel_hacking/linux/include/linux/kcsan.h \
@@ -589,64 +608,24 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
     $(wildcard include/config/DEBUG_KMAP_LOCAL) \
   /home/james/kernel_hacking/linux/include/linux/sched/ext.h \
     $(wildcard include/config/EXT_GROUP_SCHED) \
-  /home/james/kernel_hacking/linux/include/linux/spinlock.h \
-  /home/james/kernel_hacking/linux/include/linux/bottom_half.h \
-  /home/james/kernel_hacking/linux/include/linux/lockdep.h \
-    $(wildcard include/config/DEBUG_LOCKING_API_SELFTESTS) \
-  arch/x86/include/generated/asm/mmiowb.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/mmiowb.h \
-    $(wildcard include/config/MMIOWB) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/spinlock.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/paravirt.h \
-    $(wildcard include/config/PARAVIRT_SPINLOCKS) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/frame.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/qspinlock.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/qspinlock.h \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/qrwlock.h \
-  /home/james/kernel_hacking/linux/include/asm-generic/qrwlock.h \
-  /home/james/kernel_hacking/linux/include/linux/rwlock.h \
-  /home/james/kernel_hacking/linux/include/linux/spinlock_api_smp.h \
-    $(wildcard include/config/INLINE_SPIN_LOCK) \
-    $(wildcard include/config/INLINE_SPIN_LOCK_BH) \
-    $(wildcard include/config/INLINE_SPIN_LOCK_IRQ) \
-    $(wildcard include/config/INLINE_SPIN_LOCK_IRQSAVE) \
-    $(wildcard include/config/INLINE_SPIN_TRYLOCK) \
-    $(wildcard include/config/INLINE_SPIN_TRYLOCK_BH) \
-    $(wildcard include/config/UNINLINE_SPIN_UNLOCK) \
-    $(wildcard include/config/INLINE_SPIN_UNLOCK_BH) \
-    $(wildcard include/config/INLINE_SPIN_UNLOCK_IRQ) \
-    $(wildcard include/config/INLINE_SPIN_UNLOCK_IRQRESTORE) \
-    $(wildcard include/config/GENERIC_LOCKBREAK) \
-  /home/james/kernel_hacking/linux/include/linux/rwlock_api_smp.h \
-    $(wildcard include/config/INLINE_READ_LOCK) \
-    $(wildcard include/config/INLINE_WRITE_LOCK) \
-    $(wildcard include/config/INLINE_READ_LOCK_BH) \
-    $(wildcard include/config/INLINE_WRITE_LOCK_BH) \
-    $(wildcard include/config/INLINE_READ_LOCK_IRQ) \
-    $(wildcard include/config/INLINE_WRITE_LOCK_IRQ) \
-    $(wildcard include/config/INLINE_READ_LOCK_IRQSAVE) \
-    $(wildcard include/config/INLINE_WRITE_LOCK_IRQSAVE) \
-    $(wildcard include/config/INLINE_READ_TRYLOCK) \
-    $(wildcard include/config/INLINE_WRITE_TRYLOCK) \
-    $(wildcard include/config/INLINE_READ_UNLOCK) \
-    $(wildcard include/config/INLINE_WRITE_UNLOCK) \
-    $(wildcard include/config/INLINE_READ_UNLOCK_BH) \
-    $(wildcard include/config/INLINE_WRITE_UNLOCK_BH) \
-    $(wildcard include/config/INLINE_READ_UNLOCK_IRQ) \
-    $(wildcard include/config/INLINE_WRITE_UNLOCK_IRQ) \
-    $(wildcard include/config/INLINE_READ_UNLOCK_IRQRESTORE) \
-    $(wildcard include/config/INLINE_WRITE_UNLOCK_IRQRESTORE) \
-  /home/james/kernel_hacking/linux/include/linux/tracepoint-defs.h \
-  /home/james/kernel_hacking/linux/include/vdso/time32.h \
-  /home/james/kernel_hacking/linux/include/vdso/time.h \
-  /home/james/kernel_hacking/linux/include/linux/uidgid.h \
-    $(wildcard include/config/MULTIUSER) \
-    $(wildcard include/config/USER_NS) \
-  /home/james/kernel_hacking/linux/include/linux/highuid.h \
-  /home/james/kernel_hacking/linux/include/linux/buildid.h \
-    $(wildcard include/config/VMCORE_INFO) \
-  /home/james/kernel_hacking/linux/include/linux/kmod.h \
-  /home/james/kernel_hacking/linux/include/linux/umh.h \
+  /home/james/kernel_hacking/linux/include/linux/rcupdate.h \
+    $(wildcard include/config/TINY_RCU) \
+    $(wildcard include/config/RCU_STRICT_GRACE_PERIOD) \
+    $(wildcard include/config/RCU_LAZY) \
+    $(wildcard include/config/TASKS_RCU_GENERIC) \
+    $(wildcard include/config/RCU_STALL_COMMON) \
+    $(wildcard include/config/KVM_XFER_TO_GUEST_WORK) \
+    $(wildcard include/config/RCU_NOCB_CPU) \
+    $(wildcard include/config/TASKS_RUDE_RCU) \
+    $(wildcard include/config/TREE_RCU) \
+    $(wildcard include/config/DEBUG_OBJECTS_RCU_HEAD) \
+    $(wildcard include/config/PROVE_RCU) \
+    $(wildcard include/config/ARCH_WEAK_RELEASE_ACQUIRE) \
+  /home/james/kernel_hacking/linux/include/linux/context_tracking_irq.h \
+    $(wildcard include/config/CONTEXT_TRACKING_IDLE) \
+  /home/james/kernel_hacking/linux/include/linux/rcutree.h \
+  /home/james/kernel_hacking/linux/include/linux/xarray.h \
+    $(wildcard include/config/XARRAY_MULTI) \
   /home/james/kernel_hacking/linux/include/linux/gfp.h \
     $(wildcard include/config/HIGHMEM) \
     $(wildcard include/config/ZONE_DMA) \
@@ -673,12 +652,14 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
   /home/james/kernel_hacking/linux/include/linux/list_nulls.h \
   /home/james/kernel_hacking/linux/include/linux/wait.h \
   /home/james/kernel_hacking/linux/include/linux/seqlock.h \
-  /home/james/kernel_hacking/linux/include/linux/mutex.h \
-  /home/james/kernel_hacking/linux/include/linux/debug_locks.h \
   /home/james/kernel_hacking/linux/include/linux/nodemask.h \
   /home/james/kernel_hacking/linux/include/linux/random.h \
     $(wildcard include/config/VMGENID) \
   /home/james/kernel_hacking/linux/include/uapi/linux/random.h \
+  /home/james/kernel_hacking/linux/include/uapi/linux/ioctl.h \
+  arch/x86/include/generated/uapi/asm/ioctl.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/ioctl.h \
+  /home/james/kernel_hacking/linux/include/uapi/asm-generic/ioctl.h \
   /home/james/kernel_hacking/linux/include/linux/irqnr.h \
   /home/james/kernel_hacking/linux/include/uapi/linux/irqnr.h \
   /home/james/kernel_hacking/linux/include/linux/prandom.h \
@@ -703,25 +684,7 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
   /home/james/kernel_hacking/linux/include/linux/auxvec.h \
   /home/james/kernel_hacking/linux/include/uapi/linux/auxvec.h \
   /home/james/kernel_hacking/linux/arch/x86/include/uapi/asm/auxvec.h \
-  /home/james/kernel_hacking/linux/include/linux/kref.h \
-  /home/james/kernel_hacking/linux/include/linux/refcount.h \
   /home/james/kernel_hacking/linux/include/linux/rbtree.h \
-  /home/james/kernel_hacking/linux/include/linux/rcupdate.h \
-    $(wildcard include/config/TINY_RCU) \
-    $(wildcard include/config/RCU_STRICT_GRACE_PERIOD) \
-    $(wildcard include/config/RCU_LAZY) \
-    $(wildcard include/config/TASKS_RCU_GENERIC) \
-    $(wildcard include/config/RCU_STALL_COMMON) \
-    $(wildcard include/config/KVM_XFER_TO_GUEST_WORK) \
-    $(wildcard include/config/RCU_NOCB_CPU) \
-    $(wildcard include/config/TASKS_RUDE_RCU) \
-    $(wildcard include/config/TREE_RCU) \
-    $(wildcard include/config/DEBUG_OBJECTS_RCU_HEAD) \
-    $(wildcard include/config/PROVE_RCU) \
-    $(wildcard include/config/ARCH_WEAK_RELEASE_ACQUIRE) \
-  /home/james/kernel_hacking/linux/include/linux/context_tracking_irq.h \
-    $(wildcard include/config/CONTEXT_TRACKING_IDLE) \
-  /home/james/kernel_hacking/linux/include/linux/rcutree.h \
   /home/james/kernel_hacking/linux/include/linux/maple_tree.h \
     $(wildcard include/config/MAPLE_RCU_DISABLED) \
     $(wildcard include/config/DEBUG_MAPLE_TREE) \
@@ -733,17 +696,36 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
   /home/james/kernel_hacking/linux/include/linux/uprobes.h \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/uprobes.h \
   /home/james/kernel_hacking/linux/include/linux/notifier.h \
+    $(wildcard include/config/TREE_SRCU) \
   /home/james/kernel_hacking/linux/include/linux/srcu.h \
     $(wildcard include/config/TINY_SRCU) \
     $(wildcard include/config/NEED_SRCU_NMI_SAFE) \
   /home/james/kernel_hacking/linux/include/linux/workqueue.h \
     $(wildcard include/config/DEBUG_OBJECTS_WORK) \
     $(wildcard include/config/FREEZER) \
+    $(wildcard include/config/SYSFS) \
     $(wildcard include/config/WQ_WATCHDOG) \
   /home/james/kernel_hacking/linux/include/linux/timer.h \
     $(wildcard include/config/DEBUG_OBJECTS_TIMERS) \
   /home/james/kernel_hacking/linux/include/linux/ktime.h \
   /home/james/kernel_hacking/linux/include/linux/jiffies.h \
+  /home/james/kernel_hacking/linux/include/linux/time.h \
+  /home/james/kernel_hacking/linux/include/linux/time64.h \
+  /home/james/kernel_hacking/linux/include/vdso/time64.h \
+  /home/james/kernel_hacking/linux/include/uapi/linux/time.h \
+  /home/james/kernel_hacking/linux/include/linux/time32.h \
+  /home/james/kernel_hacking/linux/include/linux/timex.h \
+  /home/james/kernel_hacking/linux/include/uapi/linux/timex.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/timex.h \
+    $(wildcard include/config/X86_TSC) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/tsc.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/msr.h \
+    $(wildcard include/config/TRACEPOINTS) \
+  /home/james/kernel_hacking/linux/arch/x86/include/uapi/asm/msr.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/shared/msr.h \
+  /home/james/kernel_hacking/linux/include/linux/tracepoint-defs.h \
+  /home/james/kernel_hacking/linux/include/vdso/time32.h \
+  /home/james/kernel_hacking/linux/include/vdso/time.h \
   /home/james/kernel_hacking/linux/include/vdso/jiffies.h \
   include/generated/timeconst.h \
   /home/james/kernel_hacking/linux/include/vdso/ktime.h \
@@ -794,6 +776,112 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
   /home/james/kernel_hacking/linux/include/asm-generic/topology.h \
   /home/james/kernel_hacking/linux/include/linux/cpu_smt.h \
     $(wildcard include/config/HOTPLUG_SMT) \
+  /home/james/kernel_hacking/linux/include/linux/sched/mm.h \
+    $(wildcard include/config/MMU_LAZY_TLB_REFCOUNT) \
+    $(wildcard include/config/ARCH_HAS_MEMBARRIER_CALLBACKS) \
+  /home/james/kernel_hacking/linux/include/linux/sync_core.h \
+    $(wildcard include/config/ARCH_HAS_SYNC_CORE_BEFORE_USERMODE) \
+    $(wildcard include/config/ARCH_HAS_PREPARE_SYNC_CORE_CMD) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/sync_core.h \
+  /home/james/kernel_hacking/linux/include/linux/sched/coredump.h \
+    $(wildcard include/config/CORE_DUMP_DEFAULT_ELF_HEADERS) \
+  /home/james/kernel_hacking/linux/include/drm/drm_mode_config.h \
+  /home/james/kernel_hacking/linux/include/drm/drm_modeset_lock.h \
+  /home/james/kernel_hacking/linux/include/linux/stackdepot.h \
+    $(wildcard include/config/STACKDEPOT) \
+    $(wildcard include/config/STACKDEPOT_MAX_FRAMES) \
+    $(wildcard include/config/STACKDEPOT_ALWAYS_INIT) \
+  /home/james/kernel_hacking/linux/include/linux/ww_mutex.h \
+    $(wildcard include/config/DEBUG_RT_MUTEXES) \
+    $(wildcard include/config/DEBUG_WW_MUTEX_SLOWPATH) \
+  /home/james/kernel_hacking/linux/include/linux/rtmutex.h \
+  /home/james/kernel_hacking/linux/include/drm/drm_drv.h \
+    $(wildcard include/config/DEBUG_FS) \
+  /home/james/kernel_hacking/linux/include/linux/irqreturn.h \
+  /home/james/kernel_hacking/linux/include/video/nomodeset.h \
+  /home/james/kernel_hacking/linux/include/linux/platform_device.h \
+    $(wildcard include/config/HAS_IOMEM) \
+    $(wildcard include/config/SUSPEND) \
+    $(wildcard include/config/HIBERNATE_CALLBACKS) \
+    $(wildcard include/config/PM_SLEEP) \
+    $(wildcard include/config/SUPERH) \
+  /home/james/kernel_hacking/linux/include/linux/device.h \
+    $(wildcard include/config/GENERIC_MSI_IRQ) \
+    $(wildcard include/config/ENERGY_MODEL) \
+    $(wildcard include/config/PINCTRL) \
+    $(wildcard include/config/ARCH_HAS_DMA_OPS) \
+    $(wildcard include/config/DMA_DECLARE_COHERENT) \
+    $(wildcard include/config/DMA_CMA) \
+    $(wildcard include/config/SWIOTLB) \
+    $(wildcard include/config/SWIOTLB_DYNAMIC) \
+    $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_DEVICE) \
+    $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_CPU) \
+    $(wildcard include/config/ARCH_HAS_SYNC_DMA_FOR_CPU_ALL) \
+    $(wildcard include/config/DMA_OPS_BYPASS) \
+    $(wildcard include/config/DMA_NEED_SYNC) \
+    $(wildcard include/config/IOMMU_DMA) \
+    $(wildcard include/config/OF) \
+    $(wildcard include/config/DEVTMPFS) \
+  /home/james/kernel_hacking/linux/include/linux/dev_printk.h \
+  /home/james/kernel_hacking/linux/include/linux/ratelimit.h \
+  /home/james/kernel_hacking/linux/include/linux/energy_model.h \
+    $(wildcard include/config/SCHED_DEBUG) \
+  /home/james/kernel_hacking/linux/include/linux/kobject.h \
+    $(wildcard include/config/UEVENT_HELPER) \
+    $(wildcard include/config/DEBUG_KOBJECT_RELEASE) \
+  /home/james/kernel_hacking/linux/include/linux/sysfs.h \
+  /home/james/kernel_hacking/linux/include/linux/kernfs.h \
+    $(wildcard include/config/KERNFS) \
+  /home/james/kernel_hacking/linux/include/linux/uidgid.h \
+    $(wildcard include/config/MULTIUSER) \
+    $(wildcard include/config/USER_NS) \
+  /home/james/kernel_hacking/linux/include/linux/highuid.h \
+  /home/james/kernel_hacking/linux/include/linux/kobject_ns.h \
+  /home/james/kernel_hacking/linux/include/linux/stat.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/uapi/asm/stat.h \
+  /home/james/kernel_hacking/linux/include/uapi/linux/stat.h \
+  /home/james/kernel_hacking/linux/include/linux/sched/cpufreq.h \
+    $(wildcard include/config/CPU_FREQ) \
+  /home/james/kernel_hacking/linux/include/linux/sched/topology.h \
+    $(wildcard include/config/SCHED_CLUSTER) \
+    $(wildcard include/config/SCHED_MC) \
+    $(wildcard include/config/CPU_FREQ_GOV_SCHEDUTIL) \
+  /home/james/kernel_hacking/linux/include/linux/sched/idle.h \
+  /home/james/kernel_hacking/linux/include/linux/sched/sd_flags.h \
+  /home/james/kernel_hacking/linux/include/linux/ioport.h \
+  /home/james/kernel_hacking/linux/include/linux/klist.h \
+  /home/james/kernel_hacking/linux/include/linux/pm.h \
+    $(wildcard include/config/VT_CONSOLE_SLEEP) \
+    $(wildcard include/config/CXL_SUSPEND) \
+    $(wildcard include/config/PM) \
+    $(wildcard include/config/PM_CLK) \
+    $(wildcard include/config/PM_GENERIC_DOMAINS) \
+  /home/james/kernel_hacking/linux/include/linux/hrtimer.h \
+    $(wildcard include/config/HIGH_RES_TIMERS) \
+    $(wildcard include/config/TIME_LOW_RES) \
+    $(wildcard include/config/TIMERFD) \
+  /home/james/kernel_hacking/linux/include/linux/hrtimer_defs.h \
+  /home/james/kernel_hacking/linux/include/linux/timerqueue.h \
+  /home/james/kernel_hacking/linux/include/linux/device/bus.h \
+    $(wildcard include/config/ACPI) \
+  /home/james/kernel_hacking/linux/include/linux/device/class.h \
+  /home/james/kernel_hacking/linux/include/linux/device/driver.h \
+  /home/james/kernel_hacking/linux/include/linux/module.h \
+    $(wildcard include/config/MODULES_TREE_LOOKUP) \
+    $(wildcard include/config/STACKTRACE_BUILD_ID) \
+    $(wildcard include/config/ARCH_USES_CFI_TRAPS) \
+    $(wildcard include/config/MODULE_SIG) \
+    $(wildcard include/config/KALLSYMS) \
+    $(wildcard include/config/BPF_EVENTS) \
+    $(wildcard include/config/DEBUG_INFO_BTF_MODULES) \
+    $(wildcard include/config/EVENT_TRACING) \
+    $(wildcard include/config/MODULE_UNLOAD) \
+    $(wildcard include/config/CONSTRUCTORS) \
+    $(wildcard include/config/FUNCTION_ERROR_INJECTION) \
+  /home/james/kernel_hacking/linux/include/linux/buildid.h \
+    $(wildcard include/config/VMCORE_INFO) \
+  /home/james/kernel_hacking/linux/include/linux/kmod.h \
+  /home/james/kernel_hacking/linux/include/linux/umh.h \
   /home/james/kernel_hacking/linux/include/linux/sysctl.h \
     $(wildcard include/config/SYSCTL) \
   /home/james/kernel_hacking/linux/include/uapi/linux/sysctl.h \
@@ -862,18 +950,6 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
   /home/james/kernel_hacking/linux/include/linux/list_lru.h \
   /home/james/kernel_hacking/linux/include/linux/shrinker.h \
     $(wildcard include/config/SHRINKER_DEBUG) \
-  /home/james/kernel_hacking/linux/include/linux/xarray.h \
-    $(wildcard include/config/XARRAY_MULTI) \
-  /home/james/kernel_hacking/linux/include/linux/sched/mm.h \
-    $(wildcard include/config/MMU_LAZY_TLB_REFCOUNT) \
-    $(wildcard include/config/ARCH_HAS_MEMBARRIER_CALLBACKS) \
-  /home/james/kernel_hacking/linux/include/linux/sync_core.h \
-    $(wildcard include/config/ARCH_HAS_SYNC_CORE_BEFORE_USERMODE) \
-    $(wildcard include/config/ARCH_HAS_PREPARE_SYNC_CORE_CMD) \
-  /home/james/kernel_hacking/linux/arch/x86/include/asm/sync_core.h \
-  /home/james/kernel_hacking/linux/include/linux/sched/coredump.h \
-    $(wildcard include/config/CORE_DUMP_DEFAULT_ELF_HEADERS) \
-  /home/james/kernel_hacking/linux/include/linux/radix-tree.h \
   /home/james/kernel_hacking/linux/include/linux/pid.h \
   /home/james/kernel_hacking/linux/include/linux/capability.h \
   /home/james/kernel_hacking/linux/include/uapi/linux/capability.h \
@@ -955,16 +1031,9 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
     $(wildcard include/config/VFIO_PCI_ZDEV_KVM) \
     $(wildcard include/config/IOMMUFD) \
     $(wildcard include/config/WATCH_QUEUE) \
-  /home/james/kernel_hacking/linux/include/linux/ratelimit.h \
   /home/james/kernel_hacking/linux/include/linux/posix-timers.h \
   /home/james/kernel_hacking/linux/include/linux/alarmtimer.h \
     $(wildcard include/config/RTC_CLASS) \
-  /home/james/kernel_hacking/linux/include/linux/hrtimer.h \
-    $(wildcard include/config/HIGH_RES_TIMERS) \
-    $(wildcard include/config/TIME_LOW_RES) \
-    $(wildcard include/config/TIMERFD) \
-  /home/james/kernel_hacking/linux/include/linux/hrtimer_defs.h \
-  /home/james/kernel_hacking/linux/include/linux/timerqueue.h \
   /home/james/kernel_hacking/linux/include/linux/rcu_sync.h \
   /home/james/kernel_hacking/linux/include/linux/delayed_call.h \
   /home/james/kernel_hacking/linux/include/linux/uuid.h \
@@ -1021,14 +1090,6 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
   /home/james/kernel_hacking/linux/arch/x86/include/asm/vdso.h \
   /home/james/kernel_hacking/linux/include/uapi/linux/elf.h \
   /home/james/kernel_hacking/linux/include/uapi/linux/elf-em.h \
-  /home/james/kernel_hacking/linux/include/linux/kobject.h \
-    $(wildcard include/config/UEVENT_HELPER) \
-    $(wildcard include/config/DEBUG_KOBJECT_RELEASE) \
-  /home/james/kernel_hacking/linux/include/linux/sysfs.h \
-  /home/james/kernel_hacking/linux/include/linux/kernfs.h \
-    $(wildcard include/config/KERNFS) \
-  /home/james/kernel_hacking/linux/include/linux/idr.h \
-  /home/james/kernel_hacking/linux/include/linux/kobject_ns.h \
   /home/james/kernel_hacking/linux/include/linux/moduleparam.h \
     $(wildcard include/config/ALPHA) \
     $(wildcard include/config/PPC64) \
@@ -1042,8 +1103,171 @@ deps_/home/james/kernel_hacking/my_kernel_module/main.o := \
     $(wildcard include/config/HAVE_MOD_ARCH_SPECIFIC) \
     $(wildcard include/config/MODULES_USE_ELF_REL) \
     $(wildcard include/config/MODULES_USE_ELF_RELA) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/device.h \
+  /home/james/kernel_hacking/linux/include/linux/pm_wakeup.h \
   /home/james/kernel_hacking/linux/include/linux/proc_fs.h \
     $(wildcard include/config/PROC_PID_ARCH_STATUS) \
+  /home/james/kernel_hacking/linux/include/uapi/drm/drm.h \
+  /home/james/kernel_hacking/linux/include/uapi/drm/drm_mode.h \
+  /home/james/kernel_hacking/linux/include/drm/drm_file.h \
+  /home/james/kernel_hacking/linux/include/drm/drm_prime.h \
+  /home/james/kernel_hacking/linux/include/linux/scatterlist.h \
+    $(wildcard include/config/NEED_SG_DMA_LENGTH) \
+    $(wildcard include/config/NEED_SG_DMA_FLAGS) \
+    $(wildcard include/config/DEBUG_SG) \
+    $(wildcard include/config/SGL_ALLOC) \
+    $(wildcard include/config/ARCH_NO_SG_CHAIN) \
+    $(wildcard include/config/SG_POOL) \
+  /home/james/kernel_hacking/linux/include/linux/mm.h \
+    $(wildcard include/config/HAVE_ARCH_MMAP_RND_BITS) \
+    $(wildcard include/config/HAVE_ARCH_MMAP_RND_COMPAT_BITS) \
+    $(wildcard include/config/ARCH_USES_HIGH_VMA_FLAGS) \
+    $(wildcard include/config/ARCH_HAS_PKEYS) \
+    $(wildcard include/config/ARCH_PKEY_BITS) \
+    $(wildcard include/config/X86) \
+    $(wildcard include/config/PARISC) \
+    $(wildcard include/config/SPARC64) \
+    $(wildcard include/config/ARM64_MTE) \
+    $(wildcard include/config/HAVE_ARCH_USERFAULTFD_MINOR) \
+    $(wildcard include/config/PPC32) \
+    $(wildcard include/config/SHMEM) \
+    $(wildcard include/config/MIGRATION) \
+    $(wildcard include/config/ARCH_HAS_GIGANTIC_PAGE) \
+    $(wildcard include/config/ARCH_HAS_PTE_SPECIAL) \
+    $(wildcard include/config/SPLIT_PTE_PTLOCKS) \
+    $(wildcard include/config/HIGHPTE) \
+    $(wildcard include/config/DEBUG_VM_RB) \
+    $(wildcard include/config/PAGE_POISONING) \
+    $(wildcard include/config/INIT_ON_ALLOC_DEFAULT_ON) \
+    $(wildcard include/config/INIT_ON_FREE_DEFAULT_ON) \
+    $(wildcard include/config/DEBUG_PAGEALLOC) \
+    $(wildcard include/config/ARCH_WANT_OPTIMIZE_DAX_VMEMMAP) \
+    $(wildcard include/config/HUGETLBFS) \
+    $(wildcard include/config/MAPPING_DIRTY_HELPERS) \
+  /home/james/kernel_hacking/linux/include/linux/pgalloc_tag.h \
+  /home/james/kernel_hacking/linux/include/linux/page_ext.h \
+  /home/james/kernel_hacking/linux/include/linux/stacktrace.h \
+    $(wildcard include/config/ARCH_STACKWALK) \
+    $(wildcard include/config/STACKTRACE) \
+    $(wildcard include/config/HAVE_RELIABLE_STACKTRACE) \
+  /home/james/kernel_hacking/linux/include/linux/page_ref.h \
+    $(wildcard include/config/DEBUG_PAGE_REF) \
+  /home/james/kernel_hacking/linux/include/linux/sizes.h \
+  /home/james/kernel_hacking/linux/include/linux/pgtable.h \
+    $(wildcard include/config/ARCH_HAS_NONLEAF_PMD_YOUNG) \
+    $(wildcard include/config/ARCH_HAS_HW_PTE_YOUNG) \
+    $(wildcard include/config/GUP_GET_PXX_LOW_HIGH) \
+    $(wildcard include/config/ARCH_WANT_PMD_MKWRITE) \
+    $(wildcard include/config/HAVE_ARCH_HUGE_VMAP) \
+    $(wildcard include/config/X86_ESPFIX64) \
+  /home/james/kernel_hacking/linux/include/linux/memremap.h \
+    $(wildcard include/config/DEVICE_PRIVATE) \
+    $(wildcard include/config/PCI_P2PDMA) \
+  /home/james/kernel_hacking/linux/include/linux/huge_mm.h \
+    $(wildcard include/config/PGTABLE_HAS_HUGE_LEAVES) \
+  /home/james/kernel_hacking/linux/include/linux/vmstat.h \
+    $(wildcard include/config/VM_EVENT_COUNTERS) \
+    $(wildcard include/config/DEBUG_TLBFLUSH) \
+    $(wildcard include/config/PER_VMA_LOCK_STATS) \
+  /home/james/kernel_hacking/linux/include/linux/vm_event_item.h \
+    $(wildcard include/config/MEMORY_BALLOON) \
+    $(wildcard include/config/BALLOON_COMPACTION) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/io.h \
+    $(wildcard include/config/MTRR) \
+    $(wildcard include/config/X86_PAT) \
+  arch/x86/include/generated/asm/early_ioremap.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/early_ioremap.h \
+    $(wildcard include/config/GENERIC_EARLY_IOREMAP) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/shared/io.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/io.h \
+    $(wildcard include/config/GENERIC_IOMAP) \
+    $(wildcard include/config/TRACE_MMIO_ACCESS) \
+    $(wildcard include/config/GENERIC_IOREMAP) \
+    $(wildcard include/config/HAS_IOPORT_MAP) \
+  /home/james/kernel_hacking/linux/include/asm-generic/iomap.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/pci_iomap.h \
+    $(wildcard include/config/PCI) \
+    $(wildcard include/config/NO_GENERIC_PCI_IOPORT_MAP) \
+    $(wildcard include/config/GENERIC_PCI_IOMAP) \
+  /home/james/kernel_hacking/linux/include/linux/logic_pio.h \
+    $(wildcard include/config/INDIRECT_PIO) \
+  /home/james/kernel_hacking/linux/include/linux/fwnode.h \
+  /home/james/kernel_hacking/linux/include/drm/drm_ioctl.h \
+  /home/james/kernel_hacking/linux/include/drm/drm_module.h \
+  /home/james/kernel_hacking/linux/include/linux/pci.h \
+    $(wildcard include/config/PCI_IOV) \
+    $(wildcard include/config/PCIEAER) \
+    $(wildcard include/config/PCIEPORTBUS) \
+    $(wildcard include/config/PCIEASPM) \
+    $(wildcard include/config/HOTPLUG_PCI_PCIE) \
+    $(wildcard include/config/PCIE_PTM) \
+    $(wildcard include/config/PCI_MSI) \
+    $(wildcard include/config/PCIE_DPC) \
+    $(wildcard include/config/PCI_ATS) \
+    $(wildcard include/config/PCI_PRI) \
+    $(wildcard include/config/PCI_PASID) \
+    $(wildcard include/config/PCI_DOE) \
+    $(wildcard include/config/PCI_NPEM) \
+    $(wildcard include/config/PCI_DOMAINS_GENERIC) \
+    $(wildcard include/config/PCI_DOMAINS) \
+    $(wildcard include/config/PCI_QUIRKS) \
+    $(wildcard include/config/ACPI_MCFG) \
+    $(wildcard include/config/HOTPLUG_PCI) \
+    $(wildcard include/config/EEH) \
+  /home/james/kernel_hacking/linux/include/linux/mod_devicetable.h \
+  /home/james/kernel_hacking/linux/include/uapi/linux/mei.h \
+  /home/james/kernel_hacking/linux/include/uapi/linux/mei_uuid.h \
+  /home/james/kernel_hacking/linux/include/linux/interrupt.h \
+    $(wildcard include/config/IRQ_FORCED_THREADING) \
+    $(wildcard include/config/GENERIC_IRQ_PROBE) \
+    $(wildcard include/config/IRQ_TIMINGS) \
+  /home/james/kernel_hacking/linux/include/linux/hardirq.h \
+  /home/james/kernel_hacking/linux/include/linux/context_tracking_state.h \
+    $(wildcard include/config/CONTEXT_TRACKING_USER) \
+    $(wildcard include/config/CONTEXT_TRACKING) \
+  /home/james/kernel_hacking/linux/include/linux/ftrace_irq.h \
+    $(wildcard include/config/HWLAT_TRACER) \
+    $(wildcard include/config/OSNOISE_TRACER) \
+  /home/james/kernel_hacking/linux/include/linux/vtime.h \
+    $(wildcard include/config/VIRT_CPU_ACCOUNTING) \
+    $(wildcard include/config/IRQ_TIME_ACCOUNTING) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/hardirq.h \
+    $(wildcard include/config/KVM_INTEL) \
+    $(wildcard include/config/KVM) \
+    $(wildcard include/config/X86_THERMAL_VECTOR) \
+    $(wildcard include/config/X86_MCE_THRESHOLD) \
+    $(wildcard include/config/X86_MCE_AMD) \
+    $(wildcard include/config/X86_HV_CALLBACK_VECTOR) \
+    $(wildcard include/config/HYPERV) \
+    $(wildcard include/config/X86_POSTED_MSI) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/irq.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/irq_vectors.h \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/sections.h \
+  /home/james/kernel_hacking/linux/include/asm-generic/sections.h \
+    $(wildcard include/config/HAVE_FUNCTION_DESCRIPTORS) \
+  /home/james/kernel_hacking/linux/include/linux/io.h \
+  /home/james/kernel_hacking/linux/include/linux/resource_ext.h \
+  /home/james/kernel_hacking/linux/include/linux/msi_api.h \
+  /home/james/kernel_hacking/linux/include/uapi/linux/pci.h \
+  /home/james/kernel_hacking/linux/include/uapi/linux/pci_regs.h \
+  /home/james/kernel_hacking/linux/include/linux/pci_ids.h \
+  /home/james/kernel_hacking/linux/include/linux/dmapool.h \
+    $(wildcard include/config/HAS_DMA) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/pci.h \
+    $(wildcard include/config/VMD) \
+  /home/james/kernel_hacking/linux/arch/x86/include/asm/memtype.h \
+  /home/james/kernel_hacking/linux/include/linux/dma-mapping.h \
+    $(wildcard include/config/DMA_API_DEBUG) \
+    $(wildcard include/config/NEED_DMA_MAP_STATE) \
+  /home/james/kernel_hacking/linux/include/linux/dma-direction.h \
+  /home/james/kernel_hacking/linux/include/drm/drm_gem.h \
+  /home/james/kernel_hacking/linux/include/linux/dma-resv.h \
+  /home/james/kernel_hacking/linux/include/linux/dma-fence.h \
+  /home/james/kernel_hacking/linux/include/drm/drm_vma_manager.h \
+  /home/james/kernel_hacking/linux/include/drm/drm_mm.h \
+    $(wildcard include/config/DRM_DEBUG_MM) \
+  /home/james/kernel_hacking/linux/include/drm/drm_print.h \
+    $(wildcard include/config/DRM_USE_DYNAMIC_DEBUG) \
 
 /home/james/kernel_hacking/my_kernel_module/main.o: $(deps_/home/james/kernel_hacking/my_kernel_module/main.o)
 

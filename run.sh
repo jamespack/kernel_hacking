@@ -19,4 +19,4 @@ popd
 
 
 
-qemu-system-x86_64 -m 1G -kernel output/linux/arch/x86_64/boot/bzImage -nographic -net nic  -net user -cpu host -append 'console=ttyS0 loglevel=15' -enable-kvm -initrd output/initramfs.cpio.gz
+./qemu/build/qemu-system-x86_64 -m 1G -kernel output/linux/arch/x86_64/boot/bzImage -nographic -net nic  -net user -cpu host -append 'console=ttyS0 loglevel=15' -device packman -enable-kvm -initrd output/initramfs.cpio.gz

@@ -9,18 +9,19 @@ all: linux busybox
 linux:
 	mkdir -p output/linux
 	cp kernel_config output/linux/.config
-	$(MAKE) -C linux LLVM=1 O=$(PWD)/$(linux_output_dir) -j8
+	$(MAKE) -C linux O=$(PWD)/$(linux_output_dir) -j8
 
+linux_modules: export INSTALL_MOD_PATH=$(PWD)/$(ramdisk_dir)
 
 linux_modules:
-	$(export INSTALL_MOD_PATH=$(PWD)/$(ramdisk_dir)) $(MAKE) -C linux LLVM=1 O=$(PWD)/$(linux_output_dir) modules
-	$(export INSTALL_MOD_PATH=$(PWD)/$(ramdisk_dir)) $(MAKE) -C linux LLVM=1 O=$(PWD)/$(linux_output_dir) modules_install
+	 $(MAKE) -C linux O=$(PWD)/$(linux_output_dir) modules
+	 $(MAKE) -C linux O=$(PWD)/$(linux_output_dir) modules_install
  
 busybox:
 	mkdir -p output/busybox
 	cp busybox_config output/busybox/.config
-	$(MAKE) -C busybox CC=clang O=$(PWD)/output/busybox
-	$(MAKE) -C busybox CC=clang O=$(PWD)/output/busybox install CONFIG_PREFIX=$(PWD)/output/ramdisk
+	$(MAKE) -C busybox O=$(PWD)/output/busybox
+	$(MAKE) -C busybox O=$(PWD)/output/busybox install CONFIG_PREFIX=$(PWD)/output/ramdisk
 
 clean:
 	$(MAKE) -C linux clean O=$(PWD)/$(linux_output_dir)
